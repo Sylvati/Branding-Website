@@ -7,24 +7,65 @@
 -->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
     <title>Lach Landing</title>
     <link rel="stylesheet" href="landing.css">
     <script type="module" src="landing.js"></script>
+    <!-- Font Awesome -->
+     <script src="https://kit.fontawesome.com/fcf52d6683.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<!--
-    Should probably have a navbar 
-    Logo in the center
     
-    -->
-<button id="tiktok">TikTok</button>
-<button id="youtube">YouTube</button>
-<button id="twitch">Twitch</button>
-<button id="twitter">Twitter</button>
-<button id="instagram">Instagram</button>
+    <!-- Makes the site have that vertical phone look -->
+    <div id="resolution">
 
-<p id="log">Log:</p>
+        <!-- Navbar header that will have links, home, and shop -->
+        <header id="navbar" class="resolution-item">
+            <h1>Links</h1>
+            <h1>Home</h1>
+            <h1>Shop</h1>
+        </header>
+
+        <!-- Profile picture and name -->
+        <section id="profile-picture-section" class="resolution-item">
+            <!-- Profile picture -->
+            <img src="assets/profile_lachmood.png" alt="Lach's Profile Picture" id="profile-picture">
+            <!-- Name -->
+             <h2 id="name">Lach</h2>
+        </section>
+        
+        <!-- Social Links Section-->
+        <section id="social-links-section" class="resolution-item">
+            <div id="tiktok" class="social-link-button">
+                <i class="fa-brands fa-tiktok fa-2xl spacer"></i>
+                <p>TikTok</p>
+                <div class="spacer"></div>
+            </div>
+            <div id="youtube" class="social-link-button">
+                <i class="fa-brands fa-youtube fa-2xl spacer"></i>
+                <p>YouTube</p>
+                <div class="spacer"></div>
+            </div>
+            <div id="twitch" class="social-link-button">
+                <i class="fa-brands fa-twitch fa-2xl spacer"></i>
+                <p>Twitch</p>
+                <div class="spacer"></div>
+            </div>
+            <div id="twitter" class="social-link-button">
+                <i class="fa-brands fa-twitter fa-2xl spacer"></i>
+                <p>Twitter</p>
+                <div class="spacer"></div>
+            </div>
+            <div id="instagram" class="social-link-button">
+                <i class="fa-brands fa-instagram fa-2xl spacer"></i>
+                <p>Instagram</p>
+                <div class="spacer"></div>
+            </div>
+        </section>
+        
+    </div>
+
+    <p id="log">Log:</p>
 
 </body>
 </html>

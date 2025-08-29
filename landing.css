@@ -4,3 +4,151 @@
  * Author: Lach
  * Version: 1.0
 */
+
+/* General Styles */
+:root {
+    --background-color: rgb(255, 195, 30);
+    --border-color: black;
+    --social-link-background-color: white;
+    --social-link-border-color: black;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+}
+
+#resolution {
+    /* Center the content */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Adjust it to be phone size */
+    width: 100vw;
+    min-height: 100vh;
+    max-width: 600px;
+
+    /* Include padding and border in the element's total width and height */
+    box-sizing: border-box;
+    padding: 0px 20px 100px;
+
+    /* Make it a flexbox vertical */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resolution-item {
+    /* Full width */
+    width: 100%;
+
+    /* Add some margin */
+    margin: 10px 0;
+}
+
+#navbar {
+    /* Make it a flexbox horizontal w/ even spacing */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    /* Change font-size */
+    font-size: 0.8rem;
+}
+
+#navbar h1 {
+    /* Remove margin to give control to bar */
+    margin: 0;
+}
+
+#profile-picture-section {
+    /* Make it a vertical flex box */
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-picture {
+    /* Set a width and height */
+    width: 200px;
+    height: 200px;
+
+    /* Make it a circle */
+    border-radius: 100%;
+
+    /* Give it a solid border */
+    opacity: 1;
+    border: 2px solid var(--border-color);
+
+    /* Center the image */
+    align-self: center;
+}
+
+#name {
+    /* Center the text */
+    text-align: center;
+
+    /* Change font-size */
+    font-size: 2rem;
+
+    /* Remove margin to give control to bar */
+    margin: 10px 0px 0px 0px;
+}
+
+#social-links-section {
+    /* Make it a vertical grid */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* Give some gap between items */
+    gap: 15px;
+}
+
+.social-link-button {
+    /* Make it look clickable */
+    cursor: pointer;
+    
+    /* Give it a background colour */
+    background-color: var(--social-link-background-color);
+
+    /* Give it some padding */
+    padding: 10px 0;
+
+    /* Give it a solid border */
+    border: 2px solid var(--social-link-border-color);
+    border-radius: 8px;
+
+    /* Make it a grid */
+    display: grid;
+    /* Three columns: icon, text, spacer */
+    grid-template-columns: auto 1fr auto;
+
+    /* Center the items vertically */
+    align-items: center;
+
+    /* Make it a bit taller */
+    height: 38px;
+}
+
+.social-link-button p {
+    /* Center the text */
+    text-align: center;
+
+    /* Change font-size */
+    font-size: 1.5rem;
+
+    /* Remove margin */
+    margin: 0px;
+
+    /* Center self */
+    justify-self: center;
+}
+
+.social-icon {
+    width: 2rem;
+}
+
+.spacer {
+    width: 50px;
+}
