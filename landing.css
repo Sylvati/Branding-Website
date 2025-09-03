@@ -105,9 +105,18 @@ body {
     gap: 15px;
 }
 
+#social-links-section a {
+    /* Remove underline from links */
+    text-decoration: none;
+
+    /* Make links no longer turn blue or purple */
+    color: inherit;
+}
+
 .social-link-button {
     /* Make it look clickable */
-    cursor: pointer;
+    /* Unnecessary and a band-aid fix, just put it in <a> tags */
+    /* cursor: pointer; */
     
     /* Give it a background colour */
     background-color: var(--social-link-background-color);
