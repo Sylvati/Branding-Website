@@ -1,0 +1,48 @@
+/*
+ * Landing Page for Brand Website
+ * CSS source code
+ * Author: Lach
+ * Version: 1.0
+*/
+
+/* General Styles */
+:root {
+    --background-color: rgb(255, 195, 30);
+    --border-color: black;
+    --social-link-background-color: white;
+    --social-link-border-color: black;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+}
+
+#resolution {
+    /* Center the content */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Adjust it to be phone size */
+    width: 100vw;
+    min-height: 100vh;
+    max-width: 600px;
+
+    /* Include padding and border in the element's total width and height */
+    box-sizing: border-box;
+    padding: 0px 20px 100px;
+
+    /* Make it a flexbox vertical */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resolution-item {
+    /* Full width */
+    width: 100%;
+
+    /* Add some margin */
+    margin: 10px 0;
+}

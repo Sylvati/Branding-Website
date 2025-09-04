@@ -1,0 +1,73 @@
+#social-links-section {
+    /* Make it a vertical grid */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* Give some gap between items */
+    gap: 15px;
+}
+
+#social-links-section a {
+    /* Remove underline from links */
+    text-decoration: none;
+
+    /* Make links no longer turn blue or purple */
+    color: inherit;
+}
+
+.social-link-button {
+    /* Give it a background colour */
+    background-color: var(--social-link-background-color);
+
+    /* Give it some padding */
+    padding: 10px 0;
+
+    /* Give it a solid border */
+    border: 2px solid var(--social-link-border-color);
+    border-radius: 8px;
+
+    /* Make it a grid */
+    display: grid;
+    
+    /* Three columns: icon, text, spacer */
+    grid-template-columns: auto 1fr auto;
+
+    /* Center the items vertically */
+    align-items: center;
+
+    /* Make it a bit taller */
+    height: 38px;
+
+    /* Set transition rules */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-link-button:hover {
+    /* Scale up on hover */
+    transform: scale(1.05);
+    /* Change background color on hover */
+    filter: brightness(90%);
+}
+
+.social-link-button p {
+    /* Center the text */
+    text-align: center;
+
+    /* Change font-size */
+    font-size: 1.5rem;
+
+    /* Remove margin */
+    margin: 0px;
+
+    /* Center self */
+    justify-self: center;
+}
+
+.social-icon {
+    width: 2rem;
+}
+
+.spacer {
+    width: 50px;
+}

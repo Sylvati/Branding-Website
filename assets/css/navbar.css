@@ -1,0 +1,34 @@
+#navbar {
+    /* Make it a flexbox horizontal w/ even spacing */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#navbar a {
+    /* Remove margin to give control to bar */
+    margin: 0;
+
+    /* Makes each flex item get equal width */
+    flex: 1;
+
+    /* Which now demands we center the text */
+    text-align: center;
+    
+    /* Increase font-size */
+    font-size: 1.8rem;
+
+    /* Increase weight */
+    font-weight: bold;
+
+    /* Remove underline from links */
+    text-decoration: none;
+
+    /* Make links no longer turn blue or purple */
+    color: inherit;
+}
+
+#navbar a:hover {
+    /* Underline on hover */
+    text-decoration: underline;
+}

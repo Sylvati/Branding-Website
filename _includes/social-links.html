@@ -1,25 +1,9 @@
-<a href="{{ site.tiktok_url }}" target="_blank" id="tiktok" class="social-link-button">
-    <i class="fa-brands fa-tiktok fa-2xl spacer"></i>
-    <p>TikTok</p>
-    <div class="spacer"></div>
-</a>
-<a href="{{ site.youtube_url }}" target="_blank" id="youtube" class="social-link-button">
-    <i class="fa-brands fa-youtube fa-2xl spacer"></i>
-    <p>YouTube</p>
-    <div class="spacer"></div>
-</a>
-<a href="{{ site.twitch_url }}" target="_blank" id="twitch" class="social-link-button">
-    <i class="fa-brands fa-twitch fa-2xl spacer"></i>
-    <p>Twitch</p>
-    <div class="spacer"></div>
-</a>
-<a href="{{ site.twitter_url }}" target="_blank" id="twitter" class="social-link-button">
-    <i class="fa-brands fa-twitter fa-2xl spacer"></i>
-    <p>Twitter</p>
-    <div class="spacer"></div>
-</a>
-<a href="{{ site.instagram_url }}" target="_blank" id="instagram" class="social-link-button">
-    <i class="fa-brands fa-instagram fa-2xl spacer"></i>
-    <p>Instagram</p>
-    <div class="spacer"></div>
-</a
+<!-- Jekyll for loop -->
+{% for social in site.data.social %}
+<!-- Including a button -->
+    {% include generic-social-button.html
+        id=social.id
+        url=social.url
+        name=social.name
+    %}
+{% endfor %}

@@ -1,0 +1,32 @@
+#profile-picture-section {
+    /* Make it a vertical flex box */
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-picture {
+    /* Set a width and height */
+    width: 200px;
+    height: 200px;
+
+    /* Make it a circle */
+    border-radius: 100%;
+
+    /* Give it a solid border */
+    opacity: 1;
+    border: 2px solid var(--border-color);
+
+    /* Center the image */
+    align-self: center;
+}
+
+#name {
+    /* Center the text */
+    text-align: center;
+
+    /* Change font-size */
+    font-size: 2rem;
+
+    /* Remove margin to give control to bar */
+    margin: 10px 0px 0px 0px;
+}

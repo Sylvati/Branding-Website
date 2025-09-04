@@ -1,0 +1,21 @@
+# Social media links, ids, and names
+# TikTok
+- id: tiktok
+  url: "https://www.tiktok.com/@lachmood"
+  name: "TikTok"
+# YouTube
+- id: youtube
+  url: "https://www.youtube.com/@lachmood"
+  name: "YouTube"
+# Twitter
+- id: twitter
+  url: "https://twitter.com/lachcontent"
+  name: "Twitter"
+# Instagram
+- id: instagram
+  url: "https://www.instagram.com/lachmood/"
+  name: "Instagram"
+# Twitch
+- id: twitch
+  url: "https://www.twitch.tv/lachmood"
+  name: "Twitch"
