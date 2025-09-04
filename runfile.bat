@@ -3,6 +3,6 @@ echo Installing gems...
 call bundle install
 
 echo Starting Jekyll with live reload...
-call bundle exec jekyll serve --livereload
+call bundle exec jekyll serve --livereload --baseurl ""
 
 pause
