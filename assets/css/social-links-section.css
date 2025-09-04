@@ -2,7 +2,7 @@
     /* Make it a vertical grid */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
     /* Give some gap between items */
     gap: 15px;
@@ -17,27 +17,25 @@
 }
 
 .social-link-button {
+    /* Makes absolute positioning work later */
+    position: relative;
+
     /* Give it a background colour */
     background-color: var(--social-link-background-color);
-
-    /* Give it some padding */
-    padding: 10px 0;
-
     /* Give it a solid border */
     border: 2px solid var(--social-link-border-color);
     border-radius: 8px;
-
-    /* Make it a grid */
-    display: grid;
-    
-    /* Three columns: icon, text, spacer */
-    grid-template-columns: auto 1fr auto;
-
-    /* Center the items vertically */
-    align-items: center;
-
     /* Make it a bit taller */
     height: 38px;
+    /* Give it some padding */
+    padding: 10px 0;
+
+    /* Make it a flex */
+    display: flex;
+    /* Center the items vertically */
+    align-items: center;
+    /* Center content */
+    justify-content: center;
 
     /* Set transition rules */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -65,9 +63,49 @@
 }
 
 .social-icon {
-    width: 2rem;
+    /* Make it absolute within the button */
+    position: absolute;
+    /* Give it 15px from the left */
+    left: 2px;
+    /* Center in middle */
+    top: 50%;
+    /* Centers it? Vertically */
+    transform: translateY(-50%);
 }
 
-.spacer {
-    width: 50px;
+.social-text {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Media Specific Colors */
+
+#social-links-section a i {
+    /* Color transformation rules */
+    transition: color 0.3s ease;
+}
+
+/* TikTok (but only the icon*/
+#social-links-section a#tiktok:hover i {
+    color: var(--tiktok-color);
+}
+
+/* YouTube */
+#social-links-section a#youtube:hover i {
+    color: var(--youtube-color);
+}
+
+/* Instagram */
+#social-links-section a#instagram:hover i {
+    color: var(--instagram-color);
+}
+
+/* Twitter */
+#social-links-section a#twitter:hover i {
+    color: var(--twitter-color);
+}
+
+/* Twitch */
+#social-links-section a#twitch:hover i {
+    color: var(--twitch-color);
 }

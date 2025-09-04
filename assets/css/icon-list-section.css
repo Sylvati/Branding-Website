@@ -1,0 +1,75 @@
+#icon-list-section {
+    /* Make it a flex container */
+    display: flex;
+    /* Make it horizontal */
+    flex-direction: row;
+
+    /* Center items */
+    justify-content: space-between;
+
+    /* Vertical center */
+    align-items: center;
+
+    /* Squish icons together a bit more */
+    width: 40%;
+
+    /* Remove top margin */
+    margin-top: 0px;
+}
+
+#icon-list-section a {
+    /* Remove underline from links */
+    text-decoration: none;
+
+    /* Make links no longer turn blue or purple */
+    color: inherit;
+}
+
+#icon-list-section a:visited {
+    /* override purple */
+    color: inherit; 
+}
+
+#icon-list-section i {
+    /* Make each take one space */
+    flex: 1;
+    /* Center icon in space */
+    text-align: center;
+
+    /* Set transition rules */
+    transition: transform 0.2s ease;
+    /* Set color transition */
+    transition: color 0.3s ease;
+}
+
+#icon-list-section i:hover {
+    /* Scale up on hover */
+    transform: scale(1.3);
+}
+
+/* Media specific colors */
+
+/* TikTok */
+#icon-list-section a#tiktok:hover {
+    color: var(--tiktok-color);
+}
+
+/* YouTube */
+#icon-list-section a#youtube:hover {
+    color: var(--youtube-color);
+}
+
+/* Instagram */
+#icon-list-section a#instagram:hover {
+    color: var(--instagram-color);
+}
+
+/* Twitter */
+#icon-list-section a#twitter:hover {
+    color: var(--twitter-color);
+}
+
+/* Twitch */
+#icon-list-section a#twitch:hover {
+    color: var(--twitch-color);
+}

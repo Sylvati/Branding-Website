@@ -1,0 +1,8 @@
+<!-- Jekyll for loop -->
+{% for social in site.data.social %}
+<!-- Including an icon -->
+    {% include generic-social-icon.html
+        id=social.id
+        url=social.url
+    %}
+{% endfor %}

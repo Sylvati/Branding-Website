@@ -11,6 +11,13 @@
     --border-color: black;
     --social-link-background-color: white;
     --social-link-border-color: black;
+
+    /* Social media colors */
+    --tiktok-color: #e329ff;
+    --youtube-color: #FF0000;
+    --instagram-color: #E1306C;
+    --twitter-color: #1DA1F2;
+    --twitch-color: #9146FF;
 }
 
 body {
